@@ -1,0 +1,12 @@
+[submodule "packet"]
+	path = packet
+	url = git@github.com:frenetic-lang/ocaml-packet.git
+[submodule "openflow"]
+	path = openflow
+	url = git@github.com:frenetic-lang/ocaml-openflow.git
+[submodule "topology"]
+	path = topology
+	url = git@github.com:frenetic-lang/ocaml-topology.git
+[submodule "frenetic"]
+	path = frenetic
+	url = git@github.com:frenetic-lang/frenetic.git
