@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
 
   config.ssh.forward_x11 = true
   config.vm.provision "shell", path: "root-bootstrap.sh"
-  config.vm.provision "shell", privileged: false, inline: "user-bootstrap.sh"
+  config.vm.provision "shell", privileged: false, path: "user-bootstrap.sh"
 
   config.vm.synced_folder ".", "/home/vagrant/src"
   config.vm.hostname = "frenetic"
