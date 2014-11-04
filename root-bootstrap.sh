@@ -15,7 +15,7 @@ apt-get install -y \
   git \
   xterm \
   fortune \
-  pip \
+  python-pip \
   libcurl4-openssl-dev \
   python-dev \
   vim \
