@@ -19,9 +19,13 @@ apt-get install -y \
   libcurl4-openssl-dev \
   python-dev \
   vim \
-  python-lxml
+  python-lxml \
+  python-flask \
+  python-tornado \
+  python-pycurl \
+  python-networkx \
 
-pip install flask tornado pycurl ryu networkx
+pip install ryu
 
 # Stop OVS Controller so we can run Frenetic
 service openvswitch-controller stop
