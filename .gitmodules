@@ -10,3 +10,6 @@
 [submodule "frenetic"]
 	path = frenetic
 	url = git@github.com:frenetic-lang/frenetic.git
+[submodule "ocaml-cohttp"]
+	path = ocaml-cohttp
+	url = https://github.com/mirage/ocaml-cohttp.git

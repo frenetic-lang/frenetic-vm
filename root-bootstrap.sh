@@ -14,7 +14,14 @@ apt-get install -y \
   mininet \
   git \
   xterm \
-  fortune
+  fortune \
+  pip \
+  libcurl4-openssl-dev \
+  python-dev \
+  vim \
+  python-lxml
+
+pip install flask tornado pycurl ryu networkx
 
 # Stop OVS Controller so we can run Frenetic
 service openvswitch-controller stop
