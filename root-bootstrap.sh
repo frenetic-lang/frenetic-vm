@@ -6,9 +6,6 @@ apt-get upgrade -yq
 
 apt-get install -y \
   virtualbox-guest-x11 \
-  opam \
-  ocaml-native-compilers \
-  camlp4-extra \
   wireshark \
   m4 \
   mininet \
@@ -24,6 +21,11 @@ apt-get install -y \
   python-tornado \
   python-pycurl \
   python-networkx \
+  software-properties-common \
+
+add-apt-repository -y ppa:avsm/ppa
+apt-get update
+apt-get install -y ocaml ocaml-native-compilers camlp4-extra opam
 
 pip install ryu
 
