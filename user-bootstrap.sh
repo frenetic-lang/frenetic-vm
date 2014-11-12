@@ -8,7 +8,7 @@ echo 'eval `opam config env`' >> /home/vagrant/.profile
 opam pin add -y core 111.25.00
 opam pin add -y async 111.25.00
 opam install -y quickcheck cmdliner ipaddr ulex cstruct ocamlgraph \
-  base64 yojson oasis uri conduit cohttp
+  base64 yojson oasis uri conduit
 
 (cd src/ocaml-cohttp; make; sudo make reinstall)
 (cd src/packet; ./configure --enable-quickcheck; make; make reinstall)
