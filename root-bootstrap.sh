@@ -2,10 +2,8 @@
 set -x
 
 apt-get update
-apt-get upgrade -yq
 
 apt-get install -y \
-  virtualbox-guest-x11 \
   wireshark \
   m4 \
   mininet \
