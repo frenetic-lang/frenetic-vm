@@ -11,4 +11,4 @@ opam pin add openflow src/openflow -n
 opam pin add topology src/topology -n
 opam pin add frenetic src/frenetic -n
 
-opam install -y async yojson cohttp base64 frenetic
+opam install -y ulex cmdliner async yojson cohttp base64 frenetic
