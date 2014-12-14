@@ -19,7 +19,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "root-bootstrap.sh"
   config.vm.provision "shell", privileged: false, path: "user-bootstrap.sh"
 
-  config.vm.synced_folder ".", "/home/vagrant/src"
   config.vm.hostname = "frenetic"
 
 end
