@@ -1,10 +1,13 @@
 ## First-Time setup
 
-After cloning the repository:
+After cloning the repository type:
 
-    $ git submodule init
-    $ git submodule update
     $ vagrant up
 
-The `vagrant up` command will build Frenetic, so it takes a long time to run.
+The will build the Frenetic virtual machine, and will likely take a long time to run.
 
+Then type:
+
+    $ vagrant ssh
+
+to connect to the virtual machine.
