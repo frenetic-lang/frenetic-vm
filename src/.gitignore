@@ -1,0 +1,3 @@
+# Repositories in this folder should not be committed to the VM. In addition,
+# this file keeps the src directory in git (git cannot store empty directories).
+*

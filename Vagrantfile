@@ -21,4 +21,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.hostname = "frenetic"
 
+  config.vm.synced_folder "./src", "/home/vagrant/src"
+
 end
