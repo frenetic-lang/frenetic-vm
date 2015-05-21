@@ -9,15 +9,9 @@ echo 'eval `opam config env`' >> /home/vagrant/.profile
 opam install -y ulex cmdliner ocamlgraph quickcheck async yojson cohttp base64
 
 cd src
-git clone https://github.com/frenetic-lang/ocaml-packet
-git clone https://github.com/frenetic-lang/ocaml-topology
-git clone https://github.com/frenetic-lang/ocaml-openflow
 git clone https://github.com/frenetic-lang/frenetic
 cd ..
 
-opam pin add packet src/ocaml-packet -n -k git
-opam pin add topology src/ocaml-topology -n -k git
-opam pin add openflow src/ocaml-openflow -n -k git
 opam pin add frenetic src/frenetic -n -k git
 
 opam install -y frenetic
