@@ -4,7 +4,6 @@ set -x
 apt-get update
 
 apt-get install -y \
-  wireshark \
   m4 \
   mininet \
   git \
@@ -20,6 +19,11 @@ apt-get install -y \
   python-pycurl \
   python-networkx \
   software-properties-common \
+
+# Necessary to get Wireshark 1.12 with OpenFlow support in Ubuntu 14.04
+add-apt-repository -y ppa:wireshark-dev/stable
+apt-get update
+apt-get install -y wireshark
 
 add-apt-repository -y ppa:avsm/ppa
 apt-get update
