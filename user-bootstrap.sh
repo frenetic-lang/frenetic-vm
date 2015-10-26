@@ -4,7 +4,7 @@ set -e
 
 opam init -y
 eval `opam config env`
-echo 'eval `opam config env`' >> /home/vagrant/.profile
+echo 'eval `opam config env`' >> $HOME/.profile
 
 opam install -y ulex cmdliner ocamlgraph quickcheck async yojson cohttp base64 mparser
 
