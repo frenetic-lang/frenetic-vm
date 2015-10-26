@@ -6,8 +6,6 @@ opam init -y
 eval `opam config env`
 echo 'eval `opam config env`' >> $HOME/.profile
 
-opam install -y ulex cmdliner ocamlgraph quickcheck async yojson cohttp base64 mparser
-
 cd src
 git clone https://github.com/frenetic-lang/frenetic
 cd ..
