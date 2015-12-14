@@ -19,6 +19,7 @@ apt-get install -y \
   python-pycurl \
   python-networkx \
   software-properties-common \
+  graphviz \
 
 # Necessary to get Wireshark 1.12 with OpenFlow support in Ubuntu 14.04
 add-apt-repository -y ppa:wireshark-dev/stable
