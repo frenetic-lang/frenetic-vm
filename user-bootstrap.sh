@@ -12,6 +12,7 @@ if [ ! -d frenetic ]; then
 else
   cd frenetic
   git pull
+  cd ..
 fi
 cd ..
 
