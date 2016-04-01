@@ -1,6 +1,13 @@
 #!/bin/bash
 set -x
 
+# So you get the closest mirror
+
+#echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse\n\
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse\n\
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-backports main restricted universe multiverse\n\
+#deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse\n" > /etc/apt/sources.list
+
 apt-get update
 
 apt-get install -y \
