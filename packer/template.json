@@ -114,5 +114,15 @@
         "cpuid.coresPerSocket": "1"
       }
     }
+  ],
+  "post-processors": [
+    {
+      "type": "atlas",
+      "artifact": "cr396/frenetic-user-vm",
+      "artifact_type": "virtualbox.image",
+      "metadata": {
+        "created_at": "{{timestamp}}"
+      }
+    }
   ]
 }
