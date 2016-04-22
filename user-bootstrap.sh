@@ -13,3 +13,5 @@ cd ..
 opam pin add frenetic src/frenetic -n -k git
 
 opam install -y frenetic
+
+sudo pip install -e  src/frenetic/lang/python
