@@ -5,7 +5,6 @@ apt-get update
 
 apt-get install -y \
   m4 \
-  mininet \
   git \
   xterm \
   fortune \
@@ -20,6 +19,13 @@ apt-get install -y \
   python-networkx \
   software-properties-common \
   graphviz \
+
+# Latest package for Ubuntu 14.04 is 2.1.  Install from source to get Mininet 2.2, which solves
+# some port numbering problems, etc.
+git clone git://github.com/mininet/mininet.git
+cd mininet/util
+./install.sh
+cd
 
 # Necessary to get Wireshark 1.12 with OpenFlow support in Ubuntu 14.04
 add-apt-repository -y ppa:wireshark-dev/stable
