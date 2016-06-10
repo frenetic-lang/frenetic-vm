@@ -15,9 +15,9 @@ Mac OSX.
 All of the scripts that Packer needs to build the VM are contained in this repository, and to run them
 (with appropriate substitutions on Windows):
 
-  $ git clone http://github.com/frenetic-lang/frenetic-vm
-  $ cd frenetic-vm/packer
-  $ ./local_build.sh
+    $ git clone http://github.com/frenetic-lang/frenetic-vm
+    $ cd frenetic-vm/packer
+    $ ./local_build.sh
 
 The process takes about 40 minutes on a Macbook Pro i7.  At the end you will have a single zip file named
 `frenetic-uservm-x86_64-YYYYMMDD.zip` where `YYYYMMDD` is today's date.  
