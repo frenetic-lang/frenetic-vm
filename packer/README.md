@@ -1,6 +1,6 @@
 # Frenetic User VM
 
-To get the latest version of Frenetic User VM, see README.md in the folder above.
+To get the latest version of Frenetic User VM, see `README.md` in the folder above.
 
 To build a new version of Frenetic User VM, including the latest Master branch copy of Frenetic itself, you
 will need to install:
