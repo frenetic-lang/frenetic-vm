@@ -16,7 +16,8 @@ Frenetic and all developer branches.
 
 ## Frenetic User VM
 
-You can download the latest version of Frenetic User VM from http://download.frenetic-lang.org/uservm/frenetic-uservm-current.  
+You can download the latest version of Frenetic User VM from 
+http://download.frenetic-lang.org/uservm/frenetic-uservm-current.  
 Then follow the directions in one of the following:
 
 - The Frenetic Language README at http://github.com/frenetic-lang/frenetic
