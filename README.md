@@ -8,7 +8,7 @@ There are two versions of Frenetic VM:
 * The __Frenetic User VM__ is for developing or running SDN networks on top of Frenetic.  This VM comes in either
 VirtualBox or VMWare format,
 runs the lightweight GUI Lubuntu 14.04, and comes with a complete suite of testing and debugging tools.  It contains
-the a stable version of Frenetic.
+a stable version of Frenetic.
 
 * The __Frenetic Developer VM__ is for developers working on Frenetic itself.  This VM uses Vagrant and VirtualBox, contains
 no GUI, and shares the Frenetic Source directory so you can use host-based editors.  It contains the latest version of
