@@ -3,11 +3,9 @@
 # the $USER variable isn't changed and opam complains it's running as root  - it's not, so
 # ignore it.
 
-su frenetic - << EOF
+su --login --shell /bin/bash frenetic << EOF
 cd ~
-opam init -y
-eval `opam config env`
-echo 'eval `opam config env`' >> $HOME/.profile
+opam init --auto-setup
 
 mkdir src
 cd src
@@ -17,5 +15,8 @@ cd ..
 opam pin add frenetic src/frenetic -n -k git
 
 opam install -y frenetic
+
+sudo pip install -e  src/frenetic/lang/python
+
 EOF
 

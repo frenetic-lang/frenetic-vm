@@ -6,7 +6,6 @@ apt-get install -y \
   vim-gtk \
   emacs \
   m4 \
-  mininet \
   git \
   libappindicator1 \
   xterm \
@@ -33,6 +32,13 @@ autologin-user-timeout=0
 user-session=Lubuntu
 greeter-session=lightdm-gtk-greeter
 EOF
+
+# Latest package for Ubuntu 14.04 is 2.1.  Install from source to get Mininet 2.2, which solves
+# some port numbering problems, etc.
+git clone git://github.com/mininet/mininet.git
+cd mininet/util
+./install.sh
+cd
 
 # Necessary to get Wireshark 1.12 with OpenFlow support in Ubuntu 14.04
 add-apt-repository -y ppa:wireshark-dev/stable
