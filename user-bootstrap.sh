@@ -2,7 +2,7 @@
 set -x
 set -e
 
-opam init -y
+opam init -y --comp 4.03.0
 eval `opam config env`
 echo 'eval `opam config env`' >> $HOME/.profile
 
