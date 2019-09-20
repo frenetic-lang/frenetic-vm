@@ -2,7 +2,7 @@
 set -x
 set -e
 
-opam init -y --comp 4.03.0
+opam init -y --comp 4.06.0
 eval `opam config env`
 echo 'eval `opam config env`' >> $HOME/.profile
 
@@ -14,4 +14,4 @@ opam pin add frenetic src/frenetic -n -k git
 
 opam install -y frenetic
 
-sudo pip install -e  src/frenetic/lang/python
+sudo pip install -e  src/frenetic/src/lang/python
